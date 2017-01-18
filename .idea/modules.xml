@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mongodb-tests.iml" filepath="$PROJECT_DIR$/mongodb-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-insert-speed/test-insert-speed.iml" filepath="$PROJECT_DIR$/test-insert-speed/test-insert-speed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-query/test-query.iml" filepath="$PROJECT_DIR$/test-query/test-query.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tests-parent/tests-parent.iml" filepath="$PROJECT_DIR$/tests-parent/tests-parent.iml" />
+    </modules>
+  </component>
+</project>

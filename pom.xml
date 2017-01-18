@@ -19,5 +19,6 @@
 	<modules>
 		<module>tests-parent</module>
 		<module>test-insert-speed</module>
+		<module>test-query</module>
 	</modules>
 </project>

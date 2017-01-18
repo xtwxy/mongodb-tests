@@ -11,7 +11,7 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-public class BulkInsert {
+public class QueryOne {
 	public static int ID_COUNT = 1;
 	public static int COMMIT_COUNT = 5000;
 
