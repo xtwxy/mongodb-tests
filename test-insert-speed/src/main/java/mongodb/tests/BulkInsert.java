@@ -36,14 +36,14 @@ public class BulkInsert {
 		for (int i = 0; i < ID_COUNT; ++i) {
 			DateTime stop = DateTime.now();
 			DateTime start = stop.minusDays(365);
-			System.out.println(start);
+			System.out.println("id = " + i + ", start time = " + start);
 			do {
 
 				Date ts = new Date(start.getMillis());
 				start = start.plusMinutes(1);
 
 				Document document = new Document();
-				document.append("_id", "1");
+				document.append("id", "1");
 				document.append("ts", ts);
 				document.append("value", Math.random());
 				documents.add(document);
