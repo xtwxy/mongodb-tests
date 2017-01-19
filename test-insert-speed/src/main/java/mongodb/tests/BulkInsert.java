@@ -1,18 +1,17 @@
 package mongodb.tests;
 
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+import org.joda.time.DateTime;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.bson.Document;
-import org.joda.time.DateTime;
-
-import com.mongodb.MongoClient;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
-
 public class BulkInsert {
-	public static int ID_COUNT = 1;
+	public static int ID_COUNT = 200000;
 	public static int COMMIT_COUNT = 5000;
 
 	public static void main(String[] args) {
@@ -24,7 +23,7 @@ public class BulkInsert {
 			break;
 		}
 		MongoClient client = new MongoClient("192.168.0.68", 27017);
-		MongoDatabase testDB = client.getDatabase("monitordb");
+		MongoDatabase testDB = client.getDatabase("test");
 		MongoCollection<Document> collection = testDB.getCollection("history_ai");
 		collection.drop();
 
@@ -36,7 +35,7 @@ public class BulkInsert {
 		long ts1 = System.currentTimeMillis();
 		for (int i = 0; i < ID_COUNT; ++i) {
 			DateTime stop = DateTime.now();
-			DateTime start = stop.minusDays(365 * 3);
+			DateTime start = stop.minusDays(365);
 			System.out.println(start);
 			do {
 
@@ -44,7 +43,7 @@ public class BulkInsert {
 				start = start.plusMinutes(1);
 
 				Document document = new Document();
-				document.append("id", "1");
+				document.append("_id", "1");
 				document.append("ts", ts);
 				document.append("value", Math.random());
 				documents.add(document);
