@@ -43,7 +43,7 @@ public class BulkInsert {
 				start = start.plusMinutes(1);
 
 				Document document = new Document();
-				document.append("id", "1");
+				document.append("id", i);
 				document.append("ts", ts);
 				document.append("value", Math.random());
 				documents.add(document);
