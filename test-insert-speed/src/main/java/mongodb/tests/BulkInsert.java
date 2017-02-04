@@ -22,7 +22,7 @@ public class BulkInsert {
 		default:
 			break;
 		}
-		MongoClient client = new MongoClient("192.168.0.174", 27017);
+		MongoClient client = new MongoClient("localhost", 27017);
 		MongoDatabase testDB = client.getDatabase("monitordb");
 		MongoCollection<Document> collection = testDB.getCollection("history_ai");
 		collection.drop();
