@@ -22,6 +22,7 @@
 		<spring4.version>4.3.0.RELEASE</spring4.version>
 		<jersey.version>2.25</jersey.version>
 		<commons-beanutils.version>1.9.2</commons-beanutils.version>
+		<commons-csv.version>1.4</commons-csv.version>
 		<joda-time.version>2.9.4</joda-time.version>
 		<javax.mail.version>1.4.7</javax.mail.version>
 		<javax.activation.version>1.1.1</javax.activation.version>

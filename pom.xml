@@ -17,6 +17,7 @@
 	<name>mongodb-tests</name>
 
 	<modules>
+		<module>calc-date-diff-csv</module>
 		<module>tests-parent</module>
 		<module>test-insert-speed</module>
 		<module>test-query</module>
