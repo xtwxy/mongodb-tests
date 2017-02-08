@@ -4,6 +4,8 @@
 **/.polyglot.build.properties
 **/.idea
 **/.project
+
+**/*.iml
 .classpath
 .wtpmodules
 .settings
